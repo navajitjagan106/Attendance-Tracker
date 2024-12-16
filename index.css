@@ -1,0 +1,77 @@
+body {
+    background-image: url("yarn.jpg");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for contrast */
+    z-index: -1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    /*backdrop-filter: blur(0px); /* Blur effect for a frosted glass look */
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds slight depth */
+   /* border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+   
+}
+
+
+h1 {
+    margin: 10px 0;
+    font-size: 32px;
+    color: #ffffff; /* White text for better visibility */
+}
+
+h2 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #000000; /* Light text for a clean look */
+}
+
+button {
+    border: none;
+    padding: 10px 0;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.05); /* Hover scaling for better interaction */
+}
+
+#increment-btn {
+    background: #2C2891;
+}
+
+#save-btn {
+    background: #1C7947;
+}
+
+#save-el {
+    font-weight: bold;
+    font-size: 18px;
+    color:#e0e0e0; /* White text for visibility */
+}
